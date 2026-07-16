@@ -31,9 +31,9 @@ jobs:
           p = pathlib.Path('index.html')
           s = s2 = p.read_text(encoding='utf-8')
           if gm:
-              s2 = s2.replace('<!-- 34aced8cc617fb778d37765f1bf82e5323 -->', gm)
+              s2 = s2.replace('<!-- f74dd8a5cfd4045ff64a0794671b15907757266f -->', gm)
           if bm:
-              s2 = s2.replace('<!--  -->', bm)
+              s2 = s2.replace('<!-- 09f93b006198897932cffa9c7ca9dd73 -->', bm)
           if s2 == s and (gm or bm):
               sys.exit(1)
           if s2 != s:
